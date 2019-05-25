@@ -26,7 +26,7 @@ def winner(board)
   
   array = won?(board).to_a
   
-  array.select do |i|
+  array.detect do |i|
     board[i] == ("X" || "O")
   
   end
