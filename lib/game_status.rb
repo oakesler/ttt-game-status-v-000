@@ -29,6 +29,7 @@ def winner(board)
     i.include? ("X")
     if thing = "X"
       puts "X"
+    end
 end
   
   
