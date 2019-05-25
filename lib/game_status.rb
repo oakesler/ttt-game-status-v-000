@@ -23,6 +23,7 @@ def over?(board)
 end
 
 def winner(board)
+  
   array = won?(board).to_a
   x = array[0]
   
