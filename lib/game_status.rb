@@ -32,9 +32,3 @@ def winner(board)
     puts "O"
   end
 end
-
-
-  #array.detect do |i|
-    #puts board[i]
-    #end
-  #end
