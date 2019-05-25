@@ -29,6 +29,8 @@ def winner(board)
     board[i].include? ("X")
     if thing = "X"
       puts "X"
+    else 
+      puts "O"
     end
   end
 end
