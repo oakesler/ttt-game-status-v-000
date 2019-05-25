@@ -32,6 +32,7 @@ def winner(board)
     puts "O"
   end
 end
+end
 
   #coords = won?(board)
   #thing = coords.select do |i| 
