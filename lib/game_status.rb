@@ -25,9 +25,9 @@ end
 def winner(board)
   
   array = won?(board).to_a
-  x = array[0]
   
-  board[x] == "X"
+  array.detect do |i|
+    board[i].include? == "X"
 end
 
   #coords = won?(board)
