@@ -32,7 +32,6 @@ def winner(board)
     return "O"
     end
   end
-end
 
   
   #[board[x]].detect{|i| i == "X"}
