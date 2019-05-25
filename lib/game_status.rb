@@ -24,8 +24,9 @@ end
 
 def winner(board)
   array = won?(board).to_a
+  x = array[0]
   
-  if board[array[0]] == "X"
+  if board[x] == "X"
     puts "X"
   else
     puts "O"
