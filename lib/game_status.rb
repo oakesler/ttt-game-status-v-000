@@ -23,10 +23,8 @@ def over?(board)
 end
 
 def winner(board)
-  
-  [1, 2, 3,].detect{|i|i.odd?}
-  
-  
+  [won?(board)].detect{|i|i.include?("X")}
+end
   
   
   #won?(board).detect 
