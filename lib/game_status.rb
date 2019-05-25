@@ -29,6 +29,7 @@ def winner(board)
     puts "X"
   else 
     puts "Y"
+  end
 end
 
   #coords = won?(board)
