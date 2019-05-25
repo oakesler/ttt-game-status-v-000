@@ -23,7 +23,7 @@ def over?(board)
 end
 
 def winner(board)
-  array = won?(board).to_a
+  array = won?(board).to_ary
   x = array[0]
   if board[x] == "X"
     puts "X"
