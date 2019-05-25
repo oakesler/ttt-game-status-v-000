@@ -23,12 +23,11 @@ def over?(board)
 end
 
 def winner(board)
-  
   array = won?(board).to_a
-  
   if won?(board) == true 
     array.detect do |i|
     board[i]
+    end
   end
 end
 
