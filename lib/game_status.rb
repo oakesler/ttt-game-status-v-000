@@ -27,9 +27,10 @@ def winner(board)
   while over?(board) == true
     if board[x] == "X"
       return "X"
-  elsif board[x] == "O"
-    return "O"
-  end
+    elsif board[x] == "O"
+      return "O"
+      end
+    end
   end
 end
 
