@@ -23,14 +23,10 @@ def over?(board)
 end
 
 def winner(board)
-  array = won?(board).to_ary
+  array = won?(board).to_a
   x = array[0]
   
-  if board[x] == "X"
-    puts "X"
-  else 
-    puts "Y"
-  end
+  board[x] == "X"
 end
 
   #coords = won?(board)
