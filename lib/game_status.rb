@@ -26,6 +26,7 @@ def winner(board)
     while over?(board) == true  
     x = won?(board).to_a
     x[0].include? ("X" || "O") 
+  end
 end
   
   
