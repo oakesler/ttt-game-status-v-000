@@ -28,6 +28,7 @@ def winner(board)
   
   array.detect do |i|
     board[i].include? == "X"
+  end
 end
 
   #coords = won?(board)
