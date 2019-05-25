@@ -26,7 +26,7 @@ def winner(board)
   array = won?(board).to_a
   if won?(board) == true 
     array.detect do |i|
-    board[i]
+    return board[i]
     end
   end
 end
