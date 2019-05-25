@@ -25,29 +25,15 @@ end
 def winner(board)
   array = won?(board).to_a
   
-  array.detect do |i|
-    puts board[i]
-    end
+  if board[array[0]] == "X"
+    puts "X"
+  else
+    puts "O"
   end
+end
 
-  #coords = won?(board)
-  #thing = coords.select do |i| 
-    #board[i].include? ("X")
-  
-  #if thing = "X"
-    #puts "X"
-    #else 
-      #puts "O"
+
+  #array.detect do |i|
+    #puts board[i]
     #end
   #end
-#end
-  
-  
-  #won?(board).detect 
-  #x = list[0]
-  #if board[x] == "X"
-    #puts "X"
-  #else
-    #puts "O"
-  #end
-#end
