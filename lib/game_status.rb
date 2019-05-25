@@ -23,17 +23,25 @@ def over?(board)
 end
 
 def winner(board)
-  coords = won?(board)
-  thing = coords.select do |i| 
-    board[i].include? ("X")
+  x = won?(board)[0]
   
-  if thing = "X"
+  if board[x] == "X"
     puts "X"
-    else 
-      puts "O"
-    end
-  end
+  else 
+    puts "Y"
 end
+
+  #coords = won?(board)
+  #thing = coords.select do |i| 
+    #board[i].include? ("X")
+  
+  #if thing = "X"
+    #puts "X"
+    #else 
+      #puts "O"
+    #end
+  #end
+#end
   
   
   #won?(board).detect 
