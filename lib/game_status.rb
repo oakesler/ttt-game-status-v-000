@@ -25,7 +25,6 @@ end
 def winner(board)
     x = won?(board).to_a
     x[0].include? ("X" || "O") 
-  end
 end
   
   
