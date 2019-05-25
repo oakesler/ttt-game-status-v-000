@@ -25,10 +25,13 @@ end
 def winner(board)
   x = won?(board).to_a[0]
   
-  [board[x]].detect{|i| i == "X"}
-  
+  if board[x] == "X"
+    return "X"
+    elsif board[x] == "O"
+    return "O"
 end
   
+  #[board[x]].detect{|i| i == "X"}
     
     
     
