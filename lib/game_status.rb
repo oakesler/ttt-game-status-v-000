@@ -24,8 +24,8 @@ end
 
 def winner(board)
   if over?(board) == true
-    arrayish = won?(board).to_a
-    board[arrayish[0]].include? ("X" || "O") 
+    x = won?(board).to_a
+    x[0].include? ("X" || "O") 
   end
 end
   
