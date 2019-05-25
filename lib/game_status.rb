@@ -23,7 +23,8 @@ def over?(board)
 end
 
 def winner(board)
-  [won?(board)].detect{|i|i.include?("X")}
+  coords = won?(board)
+  coords.detect{|i|i.include?("X")}
 end
   
   
