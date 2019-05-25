@@ -30,6 +30,7 @@ def winner(board)
   array.detect do |i|
     board[i] == "X" || board[i] == "O"
   end
+end
   
   
   
