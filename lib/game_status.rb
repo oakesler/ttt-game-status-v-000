@@ -27,7 +27,7 @@ def winner(board)
   
   if board[x] == "X"
     return "X"
-    elsif board[x] == "O"
+  elsif board[x] == "O"
     return "O"
   else 
     return nil
