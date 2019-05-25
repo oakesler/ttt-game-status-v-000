@@ -24,7 +24,7 @@ end
 
 def winner(board)
   
-  array = won?(board).to_a
+  array = won?(board)
   
   array.detect do |i|
     board[i].include? ("X" || "O")
