@@ -24,13 +24,12 @@ end
 
 def winner(board)
   x = won?(board).to_a[0]
-  
-  if board[x] == "X"
+ 
+ while over?(board) == true
+ if board[x] == "X"
     return "X"
   elsif board[x] == "O"
     return "O"
-  else 
-    return nil
   end
 end
 
