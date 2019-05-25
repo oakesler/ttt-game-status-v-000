@@ -23,13 +23,24 @@ def over?(board)
 end
 
 def winner(board)
-  array = won?(board).to_a
-  x = array.to_a
-  y = x[0]
-  if board[y] == "X"
-    puts "X"
-    if board[y] == "O"
-      puts "O"
-    end
+  
+  arrayish = won?(board)
+  array = arrayish.to_a
+  
+  array.detect do |i|
+    board[i] == "X" || board[i] == "O"
   end
-end
+  
+  
+  
+  
+  #array = won?(board).to_a
+  #x = array.to_a
+  #y = x[0]
+  #if board[y] == "X"
+    #puts "X"
+    #if board[y] == "O"
+      #puts "O"
+    #end
+  #end
+#end
