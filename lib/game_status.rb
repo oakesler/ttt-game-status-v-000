@@ -24,7 +24,7 @@ end
 
 def winner(board)
   arrayish = won?(board)
-  array = arrayish.to_a 
+  array = arrayish.to_ary 
   x = array[0]
   
   [board[x]].detect{|i| i == "X"}
