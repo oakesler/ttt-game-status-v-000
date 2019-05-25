@@ -23,11 +23,17 @@ def over?(board)
 end
 
 def winner(board)
-  list = won?(board)
-  x = list[0]
-  if board[x] == "X"
-    puts "X"
-  else
-    puts "O"
-  end
-end
+  
+  [1, 2, 3,].detect{|i|i.odd?}
+  
+  
+  
+  
+  #won?(board).detect 
+  #x = list[0]
+  #if board[x] == "X"
+    #puts "X"
+  #else
+    #puts "O"
+  #end
+#end
