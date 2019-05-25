@@ -26,7 +26,7 @@ def winner(board)
   coords = won?(board)
   
   thing = coords.select do |i| 
-    i.include? ("X")
+    board[i].include? ("X")
     if thing = "X"
       puts "X"
     end
