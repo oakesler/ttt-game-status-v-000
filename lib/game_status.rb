@@ -30,6 +30,7 @@ def winner(board)
     if thing = "X"
       puts "X"
     end
+  end
 end
   
   
