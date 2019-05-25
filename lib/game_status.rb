@@ -29,7 +29,9 @@ def winner(board)
     return "X"
     elsif board[x] == "O"
     return "O"
+  end
 end
+
   
   #[board[x]].detect{|i| i == "X"}
     
