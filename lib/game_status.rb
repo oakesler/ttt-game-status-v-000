@@ -24,12 +24,11 @@ end
 
 def winner(board)
   array = won?(board).to_a
-  if won?(board) == true 
-    array.detect do |i|
+  
+  array.detect do |i|
     puts board[i]
     end
   end
-end
 
   #coords = won?(board)
   #thing = coords.select do |i| 
