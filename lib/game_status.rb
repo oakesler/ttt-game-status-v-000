@@ -23,12 +23,25 @@ def over?(board)
 end
 
 def winner(board)
-    while over?(board) == true  
-    x = won?(board)
-    array = x.to_a
-    array[0].include? ("X" || "O") 
-  end
+  arrayish = won?(board)
+  array = arrayish.to_a 
+  x = array[0]
+  
+  [board[x]].detect{|i| i == "X"}
+  
 end
+  
+    
+    
+    
+    
+    
+    #while over?(board) == true  
+    #x = won?(board)
+    #array = x.to_a
+    #array[0].include? ("X" || "O") 
+  #end
+#end
   
   
   
