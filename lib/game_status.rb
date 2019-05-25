@@ -24,7 +24,11 @@ end
 
 def winner(board)
   coords = won?(board)
-  coords.detect{|i|i.include?("X")}
+  
+  thing = coords.select do |i| 
+    i.include? ("X")
+    if thing = "X"
+      puts "X"
 end
   
   
