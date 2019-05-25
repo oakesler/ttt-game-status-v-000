@@ -25,10 +25,11 @@ end
 def winner(board)
   
   array = won?(board).to_a
-  
-  array.detect do |i|
-    board[i] == "X" || board[i] == "O"
-  
+  if won?(board) == true 
+    array.detect do |i|
+    board[i] == "X"
+  else
+    puts "O"
   end
 end
 
